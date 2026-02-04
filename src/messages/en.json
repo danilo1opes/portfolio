@@ -5,6 +5,9 @@
     "keywords": "Danilo Lopes, Front-end Developer, Junior Developer, React, JavaScript, Next.js, TypeScript, Front-End Portfolio, Web Developer, UX Design"
   },
   "Navbar": {
-    "title": "Hello world!"
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
   }
 }
