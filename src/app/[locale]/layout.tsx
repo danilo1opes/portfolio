@@ -2,22 +2,23 @@ import { inter } from '@/font/Inter';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import './globals.css';
 import { Metadata } from 'next';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
+import './globals.css';
 
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 };
-
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
+  const { locale } = await params;
+
   const t = await getTranslations({
-    locale: params.locale,
+    locale,
     namespace: 'metadata',
   });
 
@@ -27,7 +28,7 @@ export async function generateMetadata({
     keywords: t('keywords').split(', '),
     authors: [{ name: 'Danilo Lopes' }],
     alternates: {
-      canonical: `https://danilo1opes.com/${params.locale}`,
+      canonical: `https://danilo1opes.com/${locale}`,
       languages: {
         pt: 'https://danilo1opes.com/pt',
         en: 'https://danilo1opes.com/en',
@@ -36,7 +37,7 @@ export async function generateMetadata({
     openGraph: {
       title: t('title'),
       description: t('description'),
-      locale: params.locale === 'pt' ? 'pt_BR' : 'en_US',
+      locale: locale === 'pt' ? 'pt_BR' : 'en_US',
       type: 'website',
     },
   };
@@ -51,6 +52,8 @@ export default async function RootLayout({ children, params }: Props) {
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
   return (
     <html lang={locale}>
       <body className={inter.className}>
