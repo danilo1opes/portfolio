@@ -28,10 +28,10 @@ export async function generateMetadata({
     keywords: t('keywords').split(', '),
     authors: [{ name: 'Danilo Lopes' }],
     alternates: {
-      canonical: `https://danilo1opes.com/${locale}`,
+      canonical: `https://localhost:3000/${locale}`,
       languages: {
-        pt: 'https://danilo1opes.com/pt',
-        en: 'https://danilo1opes.com/en',
+        pt: 'https://localhost:3000/pt',
+        en: 'https://localhost:3000/en',
       },
     },
     openGraph: {

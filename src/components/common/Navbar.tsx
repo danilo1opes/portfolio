@@ -25,11 +25,14 @@ export default function Navbar() {
   useMenuBehavior(open, closeMenu);
 
   return (
-    <section id="home" className="bg-linear-to-r from-black to-accent">
-      <nav className="container-section py-6 md:py-8">
+    <header id="home" className="bg-linear-to-r from-black to-accent">
+      <nav
+        className="container-section py-6 md:py-8"
+        aria-label="Main navigation"
+      >
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/">
+          <Link href="/" aria-label="Danilo Lopes - Home">
             <Image
               src="/logo.svg"
               width={160}
@@ -65,7 +68,9 @@ export default function Navbar() {
 
             <button
               onClick={toggleMenu}
-              aria-label={open ? 'Fechar Menu' : 'Abrir Menu'}
+              aria-label={open ? 'Close Menu' : 'Open Menu'}
+              aria-expanded={open}
+              aria-controls="mobile-menu"
               className="z-50"
             >
               {open ? (
@@ -80,25 +85,33 @@ export default function Navbar() {
 
       {/* Menu Mobile/Tablet */}
       {open && (
-        <div className="lg:hidden fixed inset-0 bg-black z-40 pt-24 container-section">
-          <ul className="flex flex-col gap-1">
-            {NAV_ITEMS.map(({ key, href }) => (
-              <li key={key}>
-                <Link
-                  href={href}
-                  onClick={closeMenu}
-                  className="flex items-center gap-3 py-4 px-2 text-white/40 hover:text-white active:text-white transition-colors border-b border-white/10"
-                >
-                  <ChevronRight size={14} />
-                  <span className="text-sm tracking-wider uppercase font-light">
-                    {t(key)}
-                  </span>
-                </Link>
-              </li>
-            ))}
-          </ul>
+        <div
+          id="mobile-menu"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation menu"
+          className="lg:hidden fixed inset-0 bg-black z-40 pt-24 container-section"
+        >
+          <nav aria-label="Mobile navigation">
+            <ul className="flex flex-col gap-1">
+              {NAV_ITEMS.map(({ key, href }) => (
+                <li key={key}>
+                  <Link
+                    href={href}
+                    onClick={closeMenu}
+                    className="flex items-center gap-3 py-4 px-2 text-white/40 hover:text-white active:text-white transition-colors border-b border-white/10"
+                  >
+                    <ChevronRight size={14} aria-hidden="true" />
+                    <span className="text-sm tracking-wider uppercase font-light">
+                      {t(key)}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       )}
-    </section>
+    </header>
   );
 }
