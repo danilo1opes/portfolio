@@ -1,11 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Card, CardContent } from '../../ui/card';
+import { CardContent } from '@/components/ui/card';
 import { Mail, Send } from 'lucide-react';
-import { Input } from '../../ui/input';
-import { Button } from '../../ui/button';
-import { Textarea } from '../../ui/textarea';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { Textarea } from '@/components/ui/textarea';
 
 export default function ContactForm() {
   const t = useTranslations('form');
