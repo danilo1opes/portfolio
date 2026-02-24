@@ -153,7 +153,7 @@ export default function ContactForm() {
           type="submit"
           disabled={status === 'loading'}
           variant="outline"
-          className="group rounded-xs w-full h-14 uppercase border-white text-white hover:bg-white hover:text-black transition flex items-center gap-2 disabled:opacity-50"
+          className="group rounded-xs w-full h-14 uppercase border-white text-white hover:bg-white cursor-pointer hover:text-black transition flex items-center gap-2 disabled:opacity-50"
         >
           {status === 'loading' ? (
             <>
