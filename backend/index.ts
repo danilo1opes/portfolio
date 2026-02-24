@@ -3,6 +3,12 @@ import { Resend } from 'resend';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
+interface ContactBody {
+  nome: string;
+  email: string;
+  mensagem: string;
+}
+
 dotenv.config();
 
 const app = express();
@@ -15,12 +21,6 @@ app.use(
   }),
 );
 app.use(express.json());
-
-interface ContactBody {
-  nome: string;
-  email: string;
-  mensagem: string;
-}
 
 app.post(
   '/enviar',
