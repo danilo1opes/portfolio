@@ -37,11 +37,41 @@ app.post(
       replyTo: email,
       subject: `📩 Nova mensagem de ${nome}`,
       html: `
-      <h2>Nova mensagem do site</h2>
-      <p><strong>Nome:</strong> ${nome}</p>
-      <p><strong>Email:</strong> ${email}</p>
-      <p><strong>Mensagem:</strong> ${mensagem}</p>
-    `,
+  <div style="font-family: 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; background: #0e0e0e; border-radius: 8px; overflow: hidden;">
+    
+    <!-- Header -->
+    <div style="background: #161616; padding: 32px; border-bottom: 1px solid #2a2a2a;">
+      <p style="margin: 0; font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: #666;">Novo contato</p>
+      <h1 style="margin: 8px 0 0; font-size: 22px; color: #ffffff;">📩 ${nome} enviou uma mensagem</h1>
+    </div>
+
+    <!-- Body -->
+    <div style="padding: 32px; background: #0e0e0e;">
+
+      <div style="margin-bottom: 24px;">
+        <p style="margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #666;">Nome</p>
+        <p style="margin: 0; font-size: 16px; color: #e8e8e8;">${nome}</p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <p style="margin: 0 0 4px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #666;">Email</p>
+        <a href="mailto:${email}" style="margin: 0; font-size: 16px; color: #e8e8e8; text-decoration: none;">${email}</a>
+      </div>
+
+      <div style="background: #161616; border: 1px solid #2a2a2a; border-radius: 6px; padding: 20px;">
+        <p style="margin: 0 0 8px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: #666;">Mensagem</p>
+        <p style="margin: 0; font-size: 15px; color: #e8e8e8; line-height: 1.6;">${mensagem}</p>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div style="padding: 20px 32px; background: #161616; border-top: 1px solid #2a2a2a;">
+      <p style="margin: 0; font-size: 12px; color: #444;">Enviado via formulário de contato · danilo1opes.vercel.app</p>
+    </div>
+
+  </div>
+`,
     });
 
     if (error) {
