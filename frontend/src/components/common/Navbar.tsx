@@ -3,7 +3,8 @@
 import { NAV_ITEMS } from '@/constants/navitems';
 import { useMenuBehavior } from '@/hooks/useMenuBehavior';
 import LocaleSwitcher from '@/components/ui/LocaleSwitcher';
-import { ChevronRight, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { AnimatePresence, motion } from 'motion/react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -25,7 +26,11 @@ export default function Navbar() {
   useMenuBehavior(open, closeMenu);
 
   return (
-    <header id="home" className="bg-linear-to-r from-black to-accent">
+    <header
+      id="home"
+      style={{ '--navbar-height': '80px' } as React.CSSProperties}
+      className="relative z-50 bg-linear-to-r from-black to-accent"
+    >
       <nav
         className="container-section py-6 md:py-8"
         aria-label="Main navigation"
@@ -84,34 +89,52 @@ export default function Navbar() {
       </nav>
 
       {/* Menu Mobile/Tablet */}
-      {open && (
-        <div
-          id="mobile-menu"
-          role="dialog"
-          aria-modal="true"
-          aria-label="Mobile navigation menu"
-          className="lg:hidden fixed inset-0 bg-black z-40 pt-24 container-section"
-        >
-          <nav aria-label="Mobile navigation">
-            <ul className="flex flex-col gap-1">
-              {NAV_ITEMS.map(({ key, href }) => (
-                <li key={key}>
-                  <Link
-                    href={href}
-                    onClick={closeMenu}
-                    className="flex items-center gap-3 py-4 px-2 text-white/40 hover:text-white active:text-white transition-colors border-b border-white/10"
+      <AnimatePresence>
+        {open && (
+          <motion.div
+            id="mobile-menu"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Mobile navigation menu"
+            initial={{ opacity: 0, scaleY: 0 }}
+            animate={{ opacity: 1, scaleY: 1 }}
+            exit={{ opacity: 0, scaleY: 0 }}
+            style={{ originY: 0, top: 'var(--navbar-height, 80px)' }}
+            transition={{ duration: 0.35, ease: [0.76, 0, 0.24, 1] }}
+            className="lg:hidden fixed left-0 right-0 bottom-0 z-40 shadow-lg overflow-hidden"
+          >
+            <nav aria-label="Mobile navigation" className="h-full bg-white">
+              <ul className="flex flex-col" onTouchStart={() => {}}>
+                {NAV_ITEMS.map(({ key, href }, index) => (
+                  <motion.li
+                    key={key}
+                    initial={{ opacity: 0, y: -8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{
+                      delay: index * 0.05 + 0.1,
+                      duration: 0.25,
+                      ease: 'easeOut',
+                    }}
                   >
-                    <ChevronRight size={14} aria-hidden="true" />
-                    <span className="text-sm tracking-wider uppercase font-light">
+                    <Link
+                      href={href}
+                      onClick={closeMenu}
+                      className={`flex items-center justify-end px-6 py-6 md:py-8 text-sm tracking-widest md:text-lg uppercase font-medium border-b border-gray-200 transition-colors hover:bg-gray-100 active:bg-gray-100 ${
+                        index === 0
+                          ? 'bg-gray-100 text-black'
+                          : 'bg-white text-black/80 hover:bg-gray-100 hover:text-black active:bg-gray-100 active:text-black'
+                      }`}
+                    >
                       {t(key)}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      )}
+                    </Link>
+                  </motion.li>
+                ))}
+              </ul>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

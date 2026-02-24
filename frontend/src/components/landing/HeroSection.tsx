@@ -13,7 +13,7 @@ export default function HeroSection() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="relative w-full h-[95vh] md:h-screen overflow-hidden bg-primary"
+      className="relative w-full h-[110vh] md:h-screen overflow-hidden bg-primary"
     >
       {/* Video */}
       <video
