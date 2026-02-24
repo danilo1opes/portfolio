@@ -148,5 +148,8 @@
     "email": "Email",
     "message": "Message",
     "button": "Send"
+  },
+  "footer": {
+    "description": "All rights reserved."
   }
 }

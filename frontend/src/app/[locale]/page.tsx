@@ -5,6 +5,7 @@ import HeroSection from '@/components/landing/HeroSection';
 import About from '@/components/landing/About';
 import Portfolio from '@/components/landing/Projects/Portfolio';
 import Form from '@/components/landing/Form';
+import Footer from '@/components/common/Footer';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -24,6 +25,7 @@ export default function IndexPage({ params }: Props) {
         <Portfolio />
         <Form />
       </main>
+      <Footer />
     </div>
   );
 }
