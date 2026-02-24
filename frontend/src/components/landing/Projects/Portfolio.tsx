@@ -53,7 +53,7 @@ export default function Portfolio() {
       className="bg-primary"
       aria-labelledby="portfolio-heading"
     >
-      <div className="container-section py-6 pt-28">
+      <div className="container-section py-6 pt-28 pb-24 md:pb-0">
         <Subtitle />
         <h2 className="text-white text-xl leading-7 font-medium mt-6">
           {t('title')}

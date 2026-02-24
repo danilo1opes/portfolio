@@ -139,5 +139,14 @@
         }
       }
     ]
+  },
+  "form": {
+    "title": "Interessado em trabalhar juntos?",
+    "description": "Entre em contato",
+    "cardTitle": "Envie um e-mail",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Mensagem",
+    "button": "Enviar"
   }
 }

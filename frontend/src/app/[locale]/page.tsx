@@ -4,6 +4,7 @@ import Navbar from '@/components/common/Navbar';
 import HeroSection from '@/components/landing/HeroSection';
 import About from '@/components/landing/About';
 import Portfolio from '@/components/landing/Projects/Portfolio';
+import Form from '@/components/landing/Form';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -19,11 +20,10 @@ export default function IndexPage({ params }: Props) {
       <Navbar />
       <main>
         <HeroSection />
-      </main>
-      <aside>
         <About />
-      </aside>
-      <Portfolio />
+        <Portfolio />
+        <Form />
+      </main>
     </div>
   );
 }

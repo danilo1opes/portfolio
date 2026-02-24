@@ -139,5 +139,14 @@
         }
       }
     ]
+  },
+  "form": {
+    "title": "Interested in working together?",
+    "description": "Get in touch",
+    "cardTitle": "Send an email",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "button": "Send"
   }
 }

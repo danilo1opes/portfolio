@@ -1,7 +1,7 @@
 'use client';
 
 import { FRAMEWORKS } from '@/constants/framework';
-import { Button } from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button/Button';
 import { HeroBlur } from '@/components/ui/HeroBlur';
 import { CodeXml, Dot, Mouse } from 'lucide-react';
 import { useTranslations } from 'next-intl';
