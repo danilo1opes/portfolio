@@ -1,5 +1,5 @@
 import express, { Request, Response } from 'express';
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
@@ -7,6 +7,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 app.use(
   cors({
@@ -14,19 +15,6 @@ app.use(
   }),
 );
 app.use(express.json());
-
-const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 587,
-  secure: false,
-  tls: {
-    rejectUnauthorized: false,
-  },
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_PASS,
-  },
-} as any);
 
 interface ContactBody {
   nome: string;
@@ -43,25 +31,25 @@ app.post(
       return res.status(400).json({ erro: 'Preencha todos os campos' });
     }
 
-    const mailOptions = {
-      from: `"${nome}" <${process.env.GMAIL_USER}>`,
-      to: process.env.EMAIL_DESTINY,
+    const { error } = await resend.emails.send({
+      from: 'Formulário <onboarding@resend.dev>',
+      to: process.env.EMAIL_DESTINY!,
+      replyTo: email,
       subject: `📩 Nova mensagem de ${nome}`,
       html: `
-        <h2>Nova mensagem do site</h2>
-        <p><strong>Nome:</strong> ${nome}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Mensagem:</strong> ${mensagem}</p>
-      `,
-    };
+      <h2>Nova mensagem do site</h2>
+      <p><strong>Nome:</strong> ${nome}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Mensagem:</strong> ${mensagem}</p>
+    `,
+    });
 
-    try {
-      await transporter.sendMail(mailOptions);
-      res.status(200).json({ sucesso: 'Email enviado!' });
-    } catch (error) {
-      console.error((error as Error).message);
-      res.status(500).json({ erro: 'Erro ao enviar email' });
+    if (error) {
+      console.error(error);
+      return res.status(500).json({ erro: 'Erro ao enviar email' });
     }
+
+    res.status(200).json({ sucesso: 'Email enviado!' });
   },
 );
 

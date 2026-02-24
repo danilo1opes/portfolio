@@ -157,7 +157,7 @@ export default function ContactForm() {
         >
           {status === 'loading' ? (
             <>
-              Enviando...
+              {t('sending')}
               <Loader2 className="animate-spin" size={16} aria-hidden="true" />
             </>
           ) : (
