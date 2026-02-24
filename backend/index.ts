@@ -16,12 +16,15 @@ app.use(
 app.use(express.json());
 
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true, // SSL
+  family: 4, // força IPv4
   auth: {
     user: process.env.GMAIL_USER,
     pass: process.env.GMAIL_PASS,
   },
-});
+} as any);
 
 interface ContactBody {
   nome: string;
@@ -47,7 +50,7 @@ app.post(
         <p><strong>Nome:</strong> ${nome}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Mensagem:</strong> ${mensagem}</p>
-  `,
+      `,
     };
 
     try {
