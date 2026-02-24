@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "title": "Danilo Lopes | Desenvolvedor Front-end Júnior",
+    "description": "Desenvolvedor Front-end Júnior com experiência em React, Next.js e TypeScript. Segue-se meu portfólio com meus projetos desenvolvidos ao longo dos anos.",
+    "keywords": "Danilo Lopes, Desenvolvedor Front-end, Desenvolvedor Júnior, React, JavaScript, Next.js, TypeScript, Portfólio Front-End, Web Developer, UX Design"
+  },
+  "Navbar": {
+    "home": "Ínicio",
+    "about": "Sobre",
+    "portfolio": "Portfolio",
+    "contact": "Contato"
+  },
+  "herosection": {
+    "mini": "Desenvolvedor Front-End",
+    "title": {
+      "part1": "Danilo Lopes",
+      "part2": "Development"
+    },
+    "paragraph": "Crio soluções digitais funcionais, acessíveis e visualmente marcantes. Da prototipação ao código, meu objetivo é oferecer experiências fluidas e focadas no usuário.",
+    "btn": {
+      "textOne": "Ver Portifolio",
+      "textTwo": "Entre em Contato"
+    },
+    "scroll": "Role para baixo"
+  },
+  "about": {
+    "title": {
+      "textOne": "Sobre",
+      "textTwo": "Habilidades"
+    },
+    "paragraph": "Sou Desenvolvedor Front-End e crio interfaces modernas, responsivas e centradas no usuário. Trabalho com React, Next.js, TypeScript e Tailwind, sempre focando em performance e acessibilidade. Trago uma visão multicultural após 12 meses na Europa, unindo design e tecnologia para entregar soluções digitais de impacto.",
+    "card": {
+      "textOne": "Desenvolvendo para Web",
+      "textTwo": "Projetos Completados"
+    },
+    "skills": [
+      "Interfaces responsivas",
+      "HTML, CSS e JavaScript",
+      "React e Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Prototipação no Figma",
+      "Performance e Boas Praticas",
+      "Trabalho em equipe"
+    ]
+  },
+  "portfolio": {
+    "subtitle": "Portfólio",
+    "title": "Trabalhos selecionados",
+    "paragraph": "Projetos que transformam ideias em realidade",
+    "button": "Ver",
+    "card": [
+      {
+        "id": 1,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "CalisthenyX",
+        "description": "Landing page moderna para plataforma de treinos de calistenia, com foco em performance e acessibilidade.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 2,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "NyxLobby",
+        "description": "Interface de lobby e autenticação.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 3,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "NyxTech",
+        "description": "Site institucional de tecnologia.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 4,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "Boreal Forest",
+        "description": "Landing page inspirada na natureza.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 5,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "TendShop",
+        "description": "Landing page para e-commerce.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 6,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "Animais Fantásticos",
+        "description": "Site interativo desenvolvido para praticar JavaScript e manipulação do DOM.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 7,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "Tavares & Saraiva Advogados",
+        "description": "Site institucional jurídico focado em credibilidade, clareza e geração de contatos.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 8,
+        "subtitle": "Desenvolvedor Front-end",
+        "title": "NyxStellar",
+        "description": "Landing page com estética futurista e foco em impacto visual e usabilidade.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      }
+    ]
+  }
+}

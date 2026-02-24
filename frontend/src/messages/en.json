@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "title": "Danilo Lopes | Junior Front-end Developer",
+    "description": "Junior Front-end Developer with experience in React, Next.js, and TypeScript. Here is my portfolio with projects I have developed over the years.",
+    "keywords": "Danilo Lopes, Front-end Developer, Junior Developer, React, JavaScript, Next.js, TypeScript, Front-End Portfolio, Web Developer, UX Design"
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "herosection": {
+    "mini": "Front-end Developer",
+    "title": {
+      "part1": "Danilo Lopes",
+      "part2": "Development"
+    },
+    "paragraph": "I create functional, accessible and visually striking digital solutions. From prototyping to coding, my goal is to deliver seamless and user-focused experiences.",
+    "btn": {
+      "textOne": "View Portfolio",
+      "textTwo": "Contact Me"
+    },
+    "scroll": "Scroll down"
+  },
+  "about": {
+    "title": {
+      "textOne": "About",
+      "textTwo": "Skills"
+    },
+    "paragraph": "I am a Front-end Developer and I create modern, responsive and user-centered interfaces. I work with React, Next.js, TypeScript and Tailwind, always focusing on performance and accessibility. I bring a multicultural perspective after 12 months in Europe, combining design and technology to deliver impactful digital solutions.",
+    "card": {
+      "textOne": "Developing for the Web",
+      "textTwo": "Projects Completed"
+    },
+    "skills": [
+      "Responsive interfaces",
+      "HTML, CSS and JavaScript",
+      "React and Next.js",
+      "Node.js",
+      "Tailwind CSS",
+      "Figma prototyping",
+      "Performance and Best Practices",
+      "Teamwork"
+    ]
+  },
+  "portfolio": {
+    "subtitle": "Portfolio",
+    "title": "Selected Projects",
+    "paragraph": "Projects that transform ideas into reality",
+    "button": "View",
+    "card": [
+      {
+        "id": 1,
+        "subtitle": "Front-end Developer",
+        "title": "CalisthenyX",
+        "description": "Modern landing page for a calisthenics training platform, focused on performance and accessibility.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 2,
+        "subtitle": "Front-end Developer",
+        "title": "NyxLobby",
+        "description": "Lobby and authentication interface.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 3,
+        "subtitle": "Front-end Developer",
+        "title": "NyxTech",
+        "description": "Institutional technology website.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 4,
+        "subtitle": "Front-end Developer",
+        "title": "Boreal Forest",
+        "description": "Nature-inspired landing page with immersive visual aesthetics.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 5,
+        "subtitle": "Front-end Developer",
+        "title": "TendShop",
+        "description": "Landing page for an e-commerce platform.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 6,
+        "subtitle": "Front-end Developer",
+        "title": "Animais Fantásticos",
+        "description": "Interactive website developed to practice JavaScript and DOM manipulation.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 7,
+        "subtitle": "Front-end Developer",
+        "title": "Tavares & Saraiva Advogados",
+        "description": "Legal institutional website focused on credibility, clarity, and strategic lead generation.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      },
+      {
+        "id": 8,
+        "subtitle": "Front-end Developer",
+        "title": "NyxStellar",
+        "description": "Landing page with a futuristic aesthetic focused on visual impact and usability.",
+        "tech": {
+          "one": "TypeScript",
+          "two": "JavaScript",
+          "three": "Tailwind CSS"
+        }
+      }
+    ]
+  }
+}
