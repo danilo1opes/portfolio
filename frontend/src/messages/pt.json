@@ -147,7 +147,10 @@
     "name": "Nome",
     "email": "Email",
     "message": "Mensagem",
-    "button": "Enviar"
+    "button": "Enviar",
+    "success": "✓ Mensagem enviada com sucesso!",
+    "error": "✗ Erro ao enviar. Tente novamente.",
+    "sending": "Enviando..."
   },
   "footer": {
     "description": "Todos os direitos reservados."
