@@ -1,6 +1,6 @@
 import { cardsPath } from '@/constants/cardspath';
 import { ArrowUpRight } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -41,6 +41,11 @@ export default function PortfolioCard({
   const t = useTranslations('portfolio');
   const path = cardsPath[card.id];
 
+  const locale = useLocale();
+  const href = path?.href?.startsWith('http')
+    ? path.href
+    : `/${locale}${path?.href ?? '#'}`;
+
   const glow = card.glow ?? {
     width: 'w-30',
     height: 'h-15',
@@ -61,7 +66,7 @@ export default function PortfolioCard({
 
         {/* Arrow button */}
         <Link
-          href={path?.href ?? '#'}
+          href={href}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Ver projeto ${card.title}`}

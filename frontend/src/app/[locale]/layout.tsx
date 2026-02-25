@@ -5,6 +5,8 @@ import { routing } from '@/i18n/routing';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import './globals.css';
+import Navbar from '@/components/common/Navbar';
+import Footer from '@/components/common/Footer';
 
 type Props = {
   children: React.ReactNode;
@@ -58,7 +60,9 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale}>
+          <Navbar />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

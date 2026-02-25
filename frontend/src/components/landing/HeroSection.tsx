@@ -62,8 +62,12 @@ export default function HeroSection() {
 
       <div className="relative z-10 flex justify-center text-center pt-8 md:pt-14 xl:pt-20">
         <div className="flex flex-col md:flex-row items-center gap-4">
-          <Button variant="primary">{t('btn.textOne')}</Button>
-          <Button variant="secondary">{t('btn.textTwo')}</Button>
+          <Button variant="primary">
+            <a href="#portfolio">{t('btn.textOne')}</a>
+          </Button>
+          <Button variant="secondary">
+            <a href="#contact">{t('btn.textTwo')}</a>
+          </Button>
         </div>
       </div>
 
