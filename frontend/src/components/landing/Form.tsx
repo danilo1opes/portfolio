@@ -9,7 +9,7 @@ export default function Form() {
       aria-labelledby="contact-heading"
       className="bg-primary"
     >
-      <div className="container-section pt-28">
+      <div className="container-section pt-28 mb-12">
         <header>
           <h1
             className="text-white font-medium text-xl leading-7"

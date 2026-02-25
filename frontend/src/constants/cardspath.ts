@@ -14,8 +14,8 @@ export const cardsPath: Record<
     href: '/projects/calisthenyx',
     slug: 'calisthenyx',
     year: 2025,
-    siteUrl: 'https://nyxlobby.vercel.app',
-    codeUrl: 'https://github.com/danilo/nyxlobby',
+    siteUrl: 'https://calistenyx.vercel.app/',
+    codeUrl: 'https://github.com/danilo1opes/CalisthenyX',
   },
   2: {
     image: '/assets/nyxlobby.webp',
@@ -23,15 +23,15 @@ export const cardsPath: Record<
     slug: 'nyxlobby',
     year: 2025,
     siteUrl: 'https://nyxlobby.vercel.app',
-    codeUrl: 'https://github.com/danilo/nyxlobby',
+    codeUrl: 'https://github.com/danilo1opes/nyxlobby',
   },
   3: {
     image: '/assets/nyxtech.webp',
     href: '/projects/nyxtech',
     slug: 'nyxtech',
     year: 2025,
-    siteUrl: 'https://nyxlobby.vercel.app',
-    codeUrl: 'https://github.com/danilo/nyxlobby',
+    siteUrl: 'https://nyxtech.vercel.app',
+    codeUrl: 'https://github.com/danilo1opes/nyxtech',
   },
   4: {
     image: '/assets/forest.webp',
@@ -39,7 +39,7 @@ export const cardsPath: Record<
     href: '/projects/forest',
     year: 2025,
     siteUrl: 'https://nyxlobby.vercel.app',
-    codeUrl: 'https://github.com/danilo/nyxlobby',
+    codeUrl: 'https://github.com/danilo1opes/forest',
   },
   5: {
     image: '/assets/tendshop.webp',
@@ -82,5 +82,6 @@ export const slugToId: Record<string, number> = {
   forest: 4,
   tendshop: 5,
   animais: 6,
+  advocacia: 7,
   nyxstellar: 8,
 };

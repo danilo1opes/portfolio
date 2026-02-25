@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary" role="contentinfo">
       <div className="container-section">
-        <div className="flex flex-col items-center text-center gap-6 xl:flex-row xl:items-center xl:justify-between xl:text-left pt-28 mb-12">
+        <div className="flex flex-col items-center text-center gap-6 xl:flex-row xl:items-center xl:justify-between xl:text-left pt-6 mb-12">
           {/* Logo */}
           <div className="flex flex-col items-center gap-2 xl:items-start">
             <Link href="/" aria-label="Danilo Lopes - Home">

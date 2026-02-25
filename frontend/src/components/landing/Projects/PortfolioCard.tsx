@@ -67,7 +67,6 @@ export default function PortfolioCard({
         {/* Arrow button */}
         <Link
           href={href}
-          target="_blank"
           rel="noopener noreferrer"
           aria-label={`Ver projeto ${card.title}`}
           className="group/arrow absolute top-3 right-3 z-10 h-9 border border-white/10 backdrop-blur-sm hover:bg-blur/30 hover:border-blur/60 rounded-full flex items-center justify-center overflow-hidden w-9 hover:w-16 hover:px-4 transition-all duration-300"

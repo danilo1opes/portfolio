@@ -27,8 +27,8 @@ export default async function ProjectPage({ params }: Props) {
   const t = await getTranslations('projects');
   const project = t.raw(`items.${slug}`) as ProjectTranslation;
   return (
-    <main>
-      <ProjectDetail id={id} path={path} slug={slug} />
+    <main className="bg-primary min-h-screen">
+      <ProjectDetail project={project} path={path} />
     </main>
   );
 }
