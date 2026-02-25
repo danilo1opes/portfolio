@@ -81,6 +81,8 @@ export default function About() {
           </ul>
         </aside>
       </div>
+      {/* Line */}
+      <div className="mt-20 border-b border-white/10" />
     </section>
   );
 }

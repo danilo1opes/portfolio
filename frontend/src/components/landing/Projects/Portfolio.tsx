@@ -112,6 +112,8 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
+      {/* Line */}
+      <div className="mt-20 border-b border-white/10" />
     </section>
   );
 }

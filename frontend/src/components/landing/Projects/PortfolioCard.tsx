@@ -1,4 +1,7 @@
+'use client';
 import { cardsPath } from '@/constants/cardspath';
+import { motion } from 'motion/react';
+import { type Variants } from 'motion/react';
 import { ArrowUpRight } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -34,6 +37,15 @@ interface PortfolioCardProps {
   imageHeight?: string;
 }
 
+export const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, ease: 'easeOut' },
+  },
+};
+
 export default function PortfolioCard({
   card,
   imageHeight = 'h-[200px]',
@@ -54,7 +66,11 @@ export default function PortfolioCard({
   };
 
   return (
-    <div className="bg-white/5 border border-white/10 rounded-3xl p-4 flex flex-col gap-4 group hover:bg-blur/5 active:bg-blur/10 transition-colors duration-300 hover:border-blur/20 active:border-blur/20">
+    <motion.div
+      variants={cardVariants}
+      whileHover={{ y: -4, transition: { duration: 0.2, ease: 'easeOut' } }}
+      className="bg-white/5 border border-white/10 rounded-3xl p-4 flex flex-col gap-4 group hover:bg-blur/5 active:bg-blur/10 transition-colors duration-300 hover:border-blur/20 active:border-blur/20"
+    >
       {/* Image area */}
       <div
         className={`relative w-full ${imageHeight} overflow-hidden rounded-2xl border border-white/10 hover:border-blur/20`}
@@ -77,14 +93,20 @@ export default function PortfolioCard({
           </span>
         </Link>
 
-        {/* Image */}
-        <Image
-          src={path?.image ?? '/assets/placeholder.webp'}
-          fill
-          alt={`${card.title} project preview`}
-          className="object-cover opacity-50"
-          sizes="(max-width: 1280px) 100vw, 50vw"
-        />
+        {/* Image with scale on hover */}
+        <motion.div
+          className="absolute inset-0"
+          whileHover={{ scale: 1.04 }}
+          transition={{ duration: 0.4, ease: 'easeOut' }}
+        >
+          <Image
+            src={path?.image ?? '/assets/placeholder.webp'}
+            fill
+            alt={`${card.title} project preview`}
+            className="object-cover opacity-50"
+            sizes="(max-width: 1280px) 100vw, 50vw"
+          />
+        </motion.div>
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-linear-to-t from-white/5 to-transparent group-hover:from-blur/10 transition-colors duration-300" />
@@ -128,6 +150,6 @@ export default function PortfolioCard({
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

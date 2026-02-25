@@ -7,7 +7,7 @@ export default function Form() {
     <section
       id="contact"
       aria-labelledby="contact-heading"
-      className="bg-primary"
+      className="bg-primary mb-12"
     >
       <div className="container-section pt-28 mb-12">
         <header>
@@ -23,6 +23,8 @@ export default function Form() {
         </header>
         <ContactForm />
       </div>
+      {/* Line */}
+      <div className="mt-20 border-b border-white/10" />
     </section>
   );
 }
