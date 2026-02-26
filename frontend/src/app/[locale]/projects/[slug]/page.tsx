@@ -1,7 +1,6 @@
-import ProjectDetail, {
-  ProjectTranslation,
-} from '@/components/landing/Projects/ProjectDetail';
+import ProjectDetail from '@/components/landing/Projects/ProjectDetail';
 import { cardsPath, slugToId } from '@/constants/cardspath';
+import { ProjectTranslation } from '@/types/projectTranslation';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
