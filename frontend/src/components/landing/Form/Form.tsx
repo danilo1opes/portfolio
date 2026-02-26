@@ -1,8 +1,9 @@
 import { useTranslations } from 'next-intl';
-import ContactForm from '../ui/forms/ContactForm';
+import ContactForm from './ContactForm';
 
 export default function Form() {
   const t = useTranslations('form');
+
   return (
     <section
       id="contact"
@@ -11,20 +12,21 @@ export default function Form() {
     >
       <div className="container-section pt-28 mb-12">
         <header>
-          <h1
-            className="text-white font-medium text-xl leading-7"
+          <h2
             id="contact-heading"
+            className="text-white font-medium text-xl leading-7"
           >
             {t('title')}
-          </h1>
+          </h2>
           <p className="text-white/40 font-normal text-base leading-6 tracking-wide mt-6">
             {t('description')}
           </p>
         </header>
         <ContactForm />
       </div>
+
       {/* Line */}
-      <div className="mt-20 border-b border-white/10" />
+      <div className="mt-20 border-b border-white/10" role="separator" />
     </section>
   );
 }

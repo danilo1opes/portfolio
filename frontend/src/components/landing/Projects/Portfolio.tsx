@@ -1,6 +1,7 @@
+import PortfolioCard from './PortfolioCard';
 import { useTranslations } from 'next-intl';
 import { Subtitle } from '../../ui/Subtitle';
-import PortfolioCard, { CardData, GlowConfig } from './PortfolioCard';
+import { CardData, GlowConfig } from '@/types/data';
 
 // IDs dos cards que terão o glow
 const glowIdsMobile = new Set([1, 2, 3, 4, 5, 6, 7, 8]);

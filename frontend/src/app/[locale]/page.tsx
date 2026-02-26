@@ -1,9 +1,9 @@
 import { use } from 'react';
 import { setRequestLocale } from 'next-intl/server';
-import HeroSection from '@/components/landing/HeroSection';
-import About from '@/components/landing/About';
+import HeroSection from '@/components/landing/Hero/HeroSection';
+import About from '@/components/landing/About/About';
 import Portfolio from '@/components/landing/Projects/Portfolio';
-import Form from '@/components/landing/Form';
+import Form from '@/components/landing/Form/Form';
 
 type Props = {
   params: Promise<{ locale: string }>;

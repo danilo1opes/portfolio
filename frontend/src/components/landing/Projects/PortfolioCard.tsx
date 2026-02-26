@@ -1,50 +1,13 @@
 'use client';
-import { cardsPath } from '@/constants/cardspath';
-import { motion } from 'motion/react';
-import { type Variants } from 'motion/react';
-import { ArrowUpRight } from 'lucide-react';
-import { useLocale, useTranslations } from 'next-intl';
+
 import Image from 'next/image';
 import Link from 'next/link';
-
-interface CardTech {
-  one: string;
-  two: string;
-  three: string;
-}
-
-export interface GlowConfig {
-  width?: string;
-  height?: string;
-  top?: string;
-  left?: string;
-}
-
-export interface CardData {
-  id: number;
-  subtitle: string;
-  title: string;
-  description: string;
-  isGlow?: boolean;
-  isGlowMobile?: boolean;
-  isGlowDesktop?: boolean;
-  glow?: GlowConfig;
-  tech: CardTech;
-}
-
-interface PortfolioCardProps {
-  card: CardData;
-  imageHeight?: string;
-}
-
-export const cardVariants: Variants = {
-  hidden: { opacity: 0, y: 24 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: 'easeOut' },
-  },
-};
+import { cardsPath } from '@/constants/cardspath';
+import { motion } from 'motion/react';
+import { ArrowUpRight } from 'lucide-react';
+import { useLocale, useTranslations } from 'next-intl';
+import { PortfolioCardProps } from '@/types/data';
+import { cardVariants } from '@/constants/cardVariants';
 
 export default function PortfolioCard({
   card,

@@ -5,8 +5,8 @@ import { routing } from '@/i18n/routing';
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import './globals.css';
-import Navbar from '@/components/common/Navbar';
-import Footer from '@/components/common/Footer';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
 
 type Props = {
   children: React.ReactNode;
