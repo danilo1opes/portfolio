@@ -168,13 +168,13 @@
     "viewCode": "Ver Código",
     "items": {
       "calisthenyx": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Desenvolvedor Front-End",
         "title": "Calisthenyx",
         "description": "CalisthenyX é uma landing page demonstrativa que tem como objetivo apresentar uma plataforma moderna de treinos de calistenia, com foco na experiência do usuário, performance e acessibilidade. Através de uma interface visualmente atraente, o projeto mostra planos de treino, benefícios da calistenia e seções ilustrativas que traduzem o valor da aplicação de forma clara e intuitiva.",
         "client": "Projeto Pessoal",
         "duration": "1 mês",
-        "role": "Desenvolvedor Front-End",
+        "role": "Desenvolvimento Front-End",
         "challenge": "O principal desafio do projeto foi criar uma interface responsiva, acessível e otimizada para SEO, capaz de passar profissionalismo e clareza sem depender de backend complexo. A ideia era construir uma vitrine digital que pudesse se tornar a base para uma futura plataforma completa de treinos, atendendo tanto usuários que estão começando na calistenia quanto entusiastas da área.",
         "solution": "A solução foi construída com um framework moderno (Next.js) e um conjunto de tecnologias que favorecem rapidez de desenvolvimento e experiência do usuário.",
         "results": [
@@ -184,22 +184,21 @@
           "Estrutura pronta para escalar."
         ],
         "technologies": [
-          "React",
-          "TypeScript",
           "Next.js",
           "Tailwind CSS",
+          "Typescript",
           "React Icons",
-          "Framer Motion"
+          "clsx"
         ]
       },
       "nyxlobby": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Desenvolvedor Front-End",
         "title": "NyxLobby",
         "description": "O NyxLobby é um projeto focado na criação de uma interface de lobby/autenticação moderna, pensada para ser o ponto inicial de acesso a aplicações web. O projeto explora boas práticas de UI, organização de componentes e experiência do usuário, servindo como base reutilizável para sistemas maiores.",
         "client": "Projeto Pessoal",
-        "duration": "MVP",
-        "role": "Desenvolvedor Full-Stack",
+        "duration": "2 meses",
+        "role": "Desenvolvimento Full-Stack",
         "challenge": "O desafio principal foi criar uma interface de entrada clara, elegante e funcional, que transmitisse segurança e profissionalismo logo no primeiro contato do usuário. Além disso, era essencial manter o código escalável, organizado e fácil de integrar futuramente com sistemas de autenticação e backend.",
         "solution": "A solução foi desenvolver um lobby visualmente consistente, com layout responsivo e componentes reutilizáveis, priorizando simplicidade e usabilidade. O projeto foi estruturado com foco em: Separação clara de componentes, Layout limpo e intuitivo, Estilização moderna e consistente, e Código preparado para evolução (login, cadastro, permissões, etc.).",
         "results": [
@@ -208,16 +207,25 @@
           "Layout responsivo para diferentes telas;",
           "Base reutilizável para novos projetos."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "JWT",
+          "Multer"
+        ]
       },
       "nyxtech": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Desenvolvedor Front-End",
-        "title": "Nyxtech",
+        "title": "NyxTech",
         "description": "O NyxTech é um projeto institucional focado na apresentação de uma marca de tecnologia, com uma interface moderna, clara e profissional. A proposta é comunicar serviços, visão e soluções tech de forma objetiva, reforçando credibilidade e identidade visual.",
         "client": "Projeto Pessoal",
-        "duration": "MVP",
-        "role": "Desenvolvedor Front-End",
+        "duration": "1 mês",
+        "role": "Desenvolvimento Front-End",
         "challenge": "O principal desafio foi traduzir o conceito de tecnologia e inovação em uma interface limpa e confiável, evitando excesso de informação. O layout precisava ser impactante, responsivo e fácil de navegar, servindo como base para futuras expansões institucionais ou comerciais.",
         "solution": "A solução foi desenvolver uma landing page tecnológica e bem estruturada, com hierarquia visual clara e componentes reutilizáveis. O projeto prioriza: Clareza na comunicação de serviços, Visual moderno e alinhado ao universo tech, Responsividade e boa experiência em diferentes dispositivos e Estrutura escalável para novas seções e funcionalidades",
         "results": [
@@ -226,34 +234,46 @@
           "Comunicação clara e objetiva;",
           "Base pronta para evolução do produto."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Router DOM",
+          "Recharts",
+          "CSS Custom Properties"
+        ]
       },
       "nyxstellar": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Desenvolvedor Front-End",
-        "title": "Nyxtech",
+        "title": "NyxStellar",
         "description": "O NyxStellar é um projeto focado na criação de uma landing page com estética futurista e espacial, explorando conceitos visuais modernos para marcas e produtos digitais. O objetivo é unir impacto visual, clareza de informação e boa experiência de navegação.",
         "client": "Projeto Pessoal",
-        "duration": "MVP",
-        "role": "Desenvolvedor Front-End",
+        "duration": "2 meses",
+        "role": "Desenvolvimento Front-End",
         "challenge": "O desafio foi equilibrar um visual forte e conceitual com usabilidade, garantindo que a estética futurista não comprometesse a leitura, a hierarquia das informações e a experiência do usuário em diferentes dispositivos.",
-        "solution": "A solução foi desenvolver uma interface visualmente marcante, com layout bem estruturado, tipografia legível e componentes reutilizáveis.O projeto prioriza: Identidade visual consistente e moderna, Hierarquia clara de conteúdo, Responsividade e fluidez na navegação e Base escalável para novos conteúdos ou funcionalidades",
+        "solution": "A solução foi desenvolver uma interface visualmente marcante, com layout bem estruturado, tipografia legível e componentes reutilizáveis. O projeto prioriza: Identidade visual consistente e moderna, Hierarquia clara de conteúdo, Responsividade e fluidez na navegação e Base escalável para novos conteúdos ou funcionalidades",
         "results": [
           "Landing page com forte identidade visual;",
           "Layout responsivo e estruturado;",
           "Experiência clara e intuitiva;",
           "Projeto pronto para evolução."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Motion",
+          "Tailwind CSS",
+          "Vite"
+        ]
       },
       "forest": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Desenvolvedor Front-End",
         "title": "Boreal Forest",
         "description": "O Forest é um projeto de landing page que explora uma estética natural e minimalista, inspirada em sustentabilidade, bem-estar e conexão com a natureza. O objetivo é comunicar valores ambientais de forma clara, leve e visualmente agradável.",
         "client": "Projeto Pessoal",
-        "duration": "MVP",
-        "role": "Desenvolvedor Front-End",
+        "duration": "3 semanas",
+        "role": "Desenvolvimento Front-End",
         "challenge": "O principal desafio foi traduzir o conceito de natureza e tranquilidade em uma interface digital, mantendo equilíbrio entre estética, legibilidade e usabilidade. O layout precisava ser simples, responsivo e funcional, sem excessos visuais.",
         "solution": "A solução foi criar uma interface limpa e harmoniosa, com uso estratégico de cores naturais, espaçamentos generosos e hierarquia clara de conteúdo. O projeto prioriza: Visual leve e agradável, Navegação intuitiva, Responsividade em diferentes dispositivos e Estrutura reutilizável para marcas e projetos sustentáveis",
         "results": [
@@ -262,16 +282,16 @@
           "Boa hierarquia e legibilidade;",
           "Base pronta para evolução."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": ["HTML5", "Tailwind CSS", "Javascript"]
       },
       "tendshop": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Desenvolvedor Front-End",
         "title": "TendShop",
         "description": "O TendShop é um projeto de landing page para e-commerce, criado para apresentar produtos de forma atrativa, clara e focada em conversão. A interface explora tendências visuais do varejo digital, priorizando destaque de produtos e uma experiência de compra intuitiva.",
         "client": "Projeto Pessoal",
-        "duration": "MVP",
-        "role": "Desenvolvedor Front-End",
+        "duration": "2 meses",
+        "role": "Desenvolvimento Front-End",
         "challenge": "O principal desafio foi criar uma interface comercialmente eficiente, equilibrando estética moderna com clareza de informações. O layout precisava guiar o usuário naturalmente até a ação, mantendo boa leitura e responsividade em todos os dispositivos.",
         "solution": "A solução foi desenvolver uma landing page limpa e orientada a conversão, com boa hierarquia visual, componentes reutilizáveis e destaque estratégico para produtos e chamadas de ação.",
         "results": [
@@ -280,15 +300,21 @@
           "Boa hierarquia visual de produtos;",
           "Base pronta para escalar."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "react-i18next"
+        ]
       },
       "animais": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Desenvolvedor Front-End",
         "title": "Animais",
         "description": "O Animais Fantásticos é um projeto focado na construção de um site informativo interativo, desenvolvido para praticar conceitos fundamentais de JavaScript, manipulação do DOM e boas práticas de front-end. O projeto combina conteúdo educativo com animações e interações que enriquecem a experiência do usuário.",
         "client": "Projeto Educacional",
-        "duration": "MVP",
+        "duration": "1 mês",
         "role": "Desenvolvedor Front-End",
         "challenge": "O principal desafio foi implementar interações dinâmicas de forma organizada e performática, garantindo que o código fosse legível, reutilizável e fácil de manter, mesmo com múltiplos comportamentos na interface.",
         "solution": "A solução foi criar uma estrutura modular em JavaScript, separando responsabilidades e aplicando boas práticas de organização do código.",
@@ -296,9 +322,9 @@
           "Interface interativa e dinâmica;",
           "Experiência fluida para o usuário;",
           "Boa organização do código;",
-          "Experiência fluida para o usuário."
+          "Navegação suave e envolvente."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": ["Figma", "React", "TypeScript", "Vite", "Tailwind CSS"]
       },
       "advocacia": {
         "year": "2025",
@@ -307,7 +333,7 @@
         "description": "O site Tavares & Saraiva Advogados foi criado como uma presença institucional online para o escritório de advocacia sediado em Pernambuco. A plataforma apresenta os serviços jurídicos oferecidos, a equipe de profissionais e as áreas de atuação, transmitindo credibilidade, ética e compromisso com resultados.",
         "client": "Tavares & Saraiva Advogados",
         "duration": "Site Institucional",
-        "role": "Desenvolvedor Front-End",
+        "role": "Desenvolvimento Front-End",
         "challenge": "O principal desafio foi traduzir a autoridade e a seriedade de um escritório de advocacia em uma presença digital clara e profissional, sem exageros visuais, e apresentar serviços complexos do direito de forma acessível ao visitante. O site precisava ser responsivo, informativo e funcional para diferentes públicos, potenciais clientes, empresas e usuários buscando apoio jurídico.",
         "solution": "A solução consistiu em desenvolver uma landing page institucional elegante e funcional, com foco em: Estrutura de conteúdo clara, destacando áreas de atuação jurídica; Apresentação da equipe de profissionais, reforçando credibilidade e confiança; Navegação intuitiva e responsiva para dispositivos móveis; Chamadas diretas para contato e geração de leads qualificados.",
         "results": [
@@ -316,7 +342,7 @@
           "Conteúdo claro das áreas de atuação;",
           "Chamadas estratégicas para contato e conversão."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"]
       }
     }
   }

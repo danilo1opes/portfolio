@@ -58,7 +58,7 @@ export default function ProjectDetail({ project, path }: Props) {
         {/* Inicio */}
         <div className="mb-12">
           <p className="text-xs font-normal tracking-widest uppercase text-white/40 leading-4">
-            {project.year} • {project.subtitle}
+            {new Date().getFullYear()} • {project.subtitle}
           </p>
           <h1 className="mt-12 text-5xl text-white">{project.title}</h1>
           <p className="mt-6 font-light text-xl text-white/60 leading-7 tracking-[-0.45px]">

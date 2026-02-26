@@ -168,7 +168,7 @@
     "viewCode": "View Code",
     "items": {
       "calisthenyx": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Front-End Developer",
         "title": "Calisthenyx",
         "description": "CalisthenyX is a demonstrative landing page designed to present a modern calisthenics training platform, focused on user experience, performance and accessibility. Through a visually appealing interface, the project showcases training plans, calisthenics benefits and illustrative sections that convey the value of the application in a clear and intuitive way.",
@@ -184,22 +184,21 @@
           "Structure ready to scale."
         ],
         "technologies": [
-          "React",
-          "TypeScript",
           "Next.js",
           "Tailwind CSS",
+          "Typescript",
           "React Icons",
-          "Framer Motion"
+          "clsx"
         ]
       },
       "nyxlobby": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Front-End Developer",
         "title": "NyxLobby",
         "description": "NyxLobby is a project focused on creating a modern lobby/authentication interface, designed to be the starting point of access to web applications. The project explores UI best practices, component organization and user experience, serving as a reusable foundation for larger systems.",
         "client": "Personal Project",
-        "duration": "MVP",
-        "role": "Full-Stack Developer",
+        "duration": "2 months",
+        "role": "Full-Stack Development",
         "challenge": "The main challenge was to create a clear, elegant and functional entry interface that conveyed security and professionalism at first contact with the user. It was also essential to keep the code scalable, organized and easy to integrate with authentication and backend systems in the future.",
         "solution": "The solution was to develop a visually consistent lobby with responsive layout and reusable components, prioritizing simplicity and usability. The project was structured with a focus on: clear component separation, clean and intuitive layout, modern and consistent styling, and code ready for evolution (login, registration, permissions, etc.).",
         "results": [
@@ -208,16 +207,25 @@
           "Responsive layout for different screens;",
           "Reusable base for new projects."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Node.js",
+          "Express",
+          "MongoDB",
+          "JWT",
+          "Multer"
+        ]
       },
       "nyxtech": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Front-End Developer",
         "title": "NyxTech",
         "description": "NyxTech is an institutional project focused on presenting a technology brand with a modern, clear and professional interface. The goal is to communicate services, vision and tech solutions objectively, reinforcing credibility and visual identity.",
         "client": "Personal Project",
-        "duration": "MVP",
-        "role": "Front-End Developer",
+        "duration": "1 month",
+        "role": "Front-End Development",
         "challenge": "The main challenge was to translate the concept of technology and innovation into a clean and trustworthy interface, avoiding information overload. The layout needed to be impactful, responsive and easy to navigate, serving as a foundation for future institutional or commercial expansions.",
         "solution": "The solution was to develop a well-structured technology landing page with clear visual hierarchy and reusable components. The project prioritizes: clarity in service communication, modern visual aligned with the tech universe, responsiveness and good experience across different devices, and a scalable structure for new sections and features.",
         "results": [
@@ -226,16 +234,22 @@
           "Clear and objective communication;",
           "Foundation ready for product evolution."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Router DOM",
+          "Recharts",
+          "CSS Custom Properties"
+        ]
       },
       "forest": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Front-End Developer",
         "title": "Boreal Forest",
         "description": "Forest is a landing page project that explores a natural and minimalist aesthetic, inspired by sustainability, well-being and connection with nature. The goal is to communicate environmental values in a clear, light and visually pleasant way.",
         "client": "Personal Project",
-        "duration": "MVP",
-        "role": "Front-End Developer",
+        "duration": "3 weeks",
+        "role": "Front-End Development",
         "challenge": "The main challenge was to translate the concept of nature and tranquility into a digital interface, maintaining balance between aesthetics, readability and usability. The layout needed to be simple, responsive and functional without visual excesses.",
         "solution": "The solution was to create a clean and harmonious interface with strategic use of natural colors, generous spacing and clear content hierarchy. The project prioritizes: light and pleasant visuals, intuitive navigation, responsiveness across different devices, and a reusable structure for sustainable brands and projects.",
         "results": [
@@ -244,16 +258,16 @@
           "Good hierarchy and readability;",
           "Foundation ready for evolution."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": ["HTML5", "Tailwind CSS", "Javascript"]
       },
       "tendshop": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Front-End Developer",
         "title": "TendShop",
         "description": "TendShop is an e-commerce landing page project created to present products in an attractive, clear and conversion-focused way. The interface explores visual trends in digital retail, prioritizing product highlighting and an intuitive shopping experience.",
         "client": "Personal Project",
-        "duration": "MVP",
-        "role": "Front-End Developer",
+        "duration": "2 months",
+        "role": "Front-End Development",
         "challenge": "The main challenge was to create a commercially efficient interface, balancing modern aesthetics with information clarity. The layout needed to naturally guide the user toward action while maintaining good readability and responsiveness across all devices.",
         "solution": "The solution was to develop a clean, conversion-oriented landing page with good visual hierarchy, reusable components and strategic highlighting of products and calls to action.",
         "results": [
@@ -262,16 +276,22 @@
           "Good visual hierarchy of products;",
           "Foundation ready to scale."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "react-i18next"
+        ]
       },
       "animais": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Front-End Developer",
         "title": "Animais",
         "description": "Animais Fantásticos is a project focused on building an interactive informational website, developed to practice core JavaScript concepts, DOM manipulation and front-end best practices. The project combines educational content with animations and interactions that enrich the user experience.",
         "client": "Educational Project",
-        "duration": "MVP",
-        "role": "Front-End Developer",
+        "duration": "1 month",
+        "role": "Front-End Development",
         "challenge": "The main challenge was to implement dynamic interactions in an organized and performant way, ensuring the code was readable, reusable and easy to maintain, even with multiple interface behaviors.",
         "solution": "The solution was to create a modular JavaScript structure, separating responsibilities and applying code organization best practices.",
         "results": [
@@ -280,16 +300,16 @@
           "Good code organization;",
           "Smooth and engaging navigation."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": ["Figma", "React", "TypeScript", "Vite", "Tailwind CSS"]
       },
       "nyxstellar": {
-        "year": "2025",
+        "year": "2026",
         "subtitle": "Front-End Developer",
         "title": "NyxStellar",
         "description": "NyxStellar is a project focused on creating a landing page with a futuristic and spatial aesthetic, exploring modern visual concepts for brands and digital products. The goal is to combine visual impact, information clarity and a good browsing experience.",
         "client": "Personal Project",
-        "duration": "MVP",
-        "role": "Front-End Developer",
+        "duration": "2 months",
+        "role": "Front-End Development",
         "challenge": "The challenge was to balance a strong and conceptual visual with usability, ensuring that the futuristic aesthetic did not compromise readability, information hierarchy or the user experience across different devices.",
         "solution": "The solution was to develop a visually striking interface with a well-structured layout, readable typography and reusable components. The project prioritizes: consistent and modern visual identity, clear content hierarchy, responsive and fluid navigation, and a scalable base for new content or features.",
         "results": [
@@ -298,7 +318,13 @@
           "Clear and intuitive experience;",
           "Project ready for evolution."
         ],
-        "technologies": ["React", "TypeScript", "Next.js", "Tailwind CSS"]
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Motion",
+          "Tailwind CSS",
+          "Vite"
+        ]
       },
       "advocacia": {
         "year": "2025",
