@@ -1,36 +1,180 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗂️ Danilo Lopes — Portfolio
 
-## Getting Started
+> Portfólio pessoal desenvolvido com Next.js, integrando tudo que aprendi desde: UI/UX, acessibilidade, SEO semântico, internacionalização e um formulário de contato funcional com backend próprio.
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?style=flat&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.2.3-blue?style=flat&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1.18-38bdf8?style=flat&logo=tailwind-css)](https://tailwindcss.com/)
+[![next-intl](https://img.shields.io/badge/next--intl-4.8.1-purple?style=flat)](https://next-intl-docs.vercel.app/)
+[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)](https://vercel.com)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+🌐 **[Visualizar o Projeto](https://danilo1opes.vercel.app)**
+
+---
+
+## 📋 Índice
+
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Tecnologias](#-tecnologias)
+- [Funcionalidades](#-funcionalidades)
+- [Backend](#-backend)
+- [Estrutura de Pastas](#-estrutura-de-pastas)
+- [Como Rodar](#-como-rodar)
+- [Autor](#-autor)
+
+---
+
+## 🎯 Sobre o Projeto
+
+**danilo1opes** é um portfólio pessoal desenvolvido para apresentar minha trajetória como desenvolvedor Front-end. O projeto úne tudo que aprendi ao longo desses ultimos 2 anos:
+
+- 💼 Projetos selecionados com páginas de detalhes individuais
+- 📬 Formulário de contato funcional integrado a um backend próprio
+- 🌍 Suporte a múltiplos idiomas (PT-BR / EN)
+- ♿ Acessibilidade e SEO semântico aplicados em toda a estrutura
+- 🎨 UI construída com shadcn/ui e Tailwind CSS v4
+
+---
+
+## 🚀 Tecnologias
+
+### Core
+
+- **[Next.js 16.1.6](https://nextjs.org/)** — Framework React com App Router e Turbopack
+- **[React 19.2.3](https://react.dev/)** — Biblioteca JavaScript para interfaces
+- **[TypeScript 5](https://www.typescriptlang.org/)** — Superset tipado do JavaScript
+
+### Estilização
+
+- **[Tailwind CSS 4.1.18](https://tailwindcss.com/)** — Framework CSS utility-first
+- **[tailwind-merge](https://github.com/dcastil/tailwind-merge)** — Merge inteligente de classes Tailwind
+- **[clsx](https://github.com/lukeed/clsx)** — Utilitário para classes condicionais
+- **[tw-animate-css](https://github.com/Wombosvideo/tw-animate-css)** — Animações CSS para Tailwind
+
+### UI & Componentes
+
+- **[shadcn/ui](https://ui.shadcn.com/)** — Componentes acessíveis e customizáveis
+- **[Radix UI](https://www.radix-ui.com/)** — Primitivos de UI sem estilo
+- **[Lucide React](https://lucide.dev/)** — Biblioteca de ícones
+- **[Motion](https://motion.dev/)** — Animações declarativas para React
+
+### Internacionalização
+
+- **[next-intl 4.8.1](https://next-intl-docs.vercel.app/)** — i18n para Next.js com suporte a PT-BR e EN
+
+### Ferramentas de Desenvolvimento
+
+- **[ESLint 9](https://eslint.org/)** — Linter para código JavaScript/TypeScript
+- **[shadcn CLI](https://ui.shadcn.com/docs/cli)** — CLI para gerenciamento de componentes shadcn
+
+---
+
+## ✨ Funcionalidades
+
+### 🎨 Design & UX
+
+- ▪️ Design responsivo (Mobile-first)
+- ▪️ Animações com Motion (menu mobile, transições de página)
+- ▪️ Navbar com scroll infinito de frameworks
+- ▪️ Páginas individuais para cada projeto do portfólio
+
+### 🌍 Internacionalização
+
+- ▪️ Suporte completo a PT-BR e Inglês
+- ▪️ Alternância de idioma via `LocaleSwitcher`
+- ▪️ Rotas localizadas com `next-intl`
+
+### 📬 Formulário de Contato
+
+- ▪️ Validação de campos no front-end
+- ▪️ Integração com backend próprio (Express + Resend)
+- ▪️ Feedback visual de envio (loading, sucesso, erro)
+- ▪️ E-mail HTML estilizado entregue via Resend
+
+### ♿ Acessibilidade
+
+- ▪️ Navegação por teclado completa
+- ▪️ Atributos ARIA semânticos (`aria-labelledby`, `aria-label`, `aria-hidden`)
+- ▪️ Estrutura semântica correta (`article`, `section`, `nav`, `header`, `footer`, `dl/dt/dd`)
+- ▪️ Focus indicators visíveis
+
+### 🔍 SEO
+
+- ▪️ Metadados otimizados com Open Graph e Twitter Cards
+- ▪️ Hierarquia de headings correta (`h1` → `h2`)
+- ▪️ Imagens com `alt` descritivo
+- ▪️ `<time>` e elementos semânticos para motores de busca
+- ▪️ HTML5 semântico em todos os componentes
+
+---
+
+## 🖥️ Backend
+
+O formulário de contato é integrado a uma API própria desenvolvida com **Node.js + Express + TypeScript**, hospedada separadamente.
+
+### Tecnologias
+
+- **[Express 5](https://expressjs.com/)** — Framework HTTP para Node.js
+- **[Resend](https://resend.com/)** — Serviço de envio de e-mails transacionais
+- **[CORS](https://github.com/expressjs/cors)** — Controle de origens permitidas
+- **[dotenv](https://github.com/motdotla/dotenv)** — Gerenciamento de variáveis de ambiente
+- **[TypeScript 5](https://www.typescriptlang.org/)** — Tipagem estática
+
+### Endpoint
+
+```
+POST /enviar
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Body:**
+```json
+{
+  "nome": "string",
+  "email": "string",
+  "mensagem": "string"
+}
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Respostas:**
+| Status | Descrição |
+|--------|-----------|
+| `200` | E-mail enviado com sucesso |
+| `400` | Campos obrigatórios ausentes |
+| `500` | Erro interno ao enviar e-mail |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+O design do portfólio foi criado por uma profissional incrível que tive o prazer de contratar para o projeto.
 
-## Deploy on Vercel
+Todo o trabalho foi pensado com muito cuidado, atenção aos detalhes e uma identidade visual que realmente elevou o resultado final. A qualidade e o profissionalismo dela fizeram toda a diferença no projeto, recomendo muito seu trabalho:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Behance: [uxariane](https://www.behance.net/uxariane)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+
+## 👨‍💻 Autor
+
+**Danilo Lopes**
+
+- GitHub: [@danilo1opes](https://github.com/danilo1opes)
+- LinkedIn: [Danilo Lopes](https://linkedin.com/in/danilo1opes)
+
+---
+
+## 📄 Licença
+
+Este projeto é privado e todos os direitos são reservados.
+
+---
+
+<div align="center">
+  <p>Desenvolvido por <a href="https://github.com/danilo1opes">danilo1opes</a></p>
+  <p>© 2026 danilo1opes • Todos os direitos reservados</p>
+</div>
