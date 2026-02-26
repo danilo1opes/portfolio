@@ -29,7 +29,7 @@ export default function Navbar() {
     <header
       id="home"
       style={{ '--navbar-height': '80px' } as React.CSSProperties}
-      className="relative z-50 bg-linear-to-r from-black to-accent"
+      className="sticky top-0 z-50 bg-linear-to-r from-black to-accent"
     >
       <nav
         className="container-section py-6 md:py-8"

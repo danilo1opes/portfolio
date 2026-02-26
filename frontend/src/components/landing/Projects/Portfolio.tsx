@@ -106,7 +106,7 @@ export default function Portfolio() {
               </div>
               <PortfolioCard
                 card={cardBottomRight}
-                imageHeight="h-[270px] 2xl:h-[335px]"
+                imageHeight="h-[270px] 2xl:h-[315px]"
               />
             </div>
           </div>
