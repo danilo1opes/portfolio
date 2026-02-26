@@ -19,8 +19,7 @@
 - [Tecnologias](#-tecnologias)
 - [Funcionalidades](#-funcionalidades)
 - [Backend](#-backend)
-- [Estrutura de Pastas](#-estrutura-de-pastas)
-- [Como Rodar](#-como-rodar)
+- [Design](#-design)
 - [Autor](#-autor)
 
 ---
@@ -128,6 +127,7 @@ POST /enviar
 ```
 
 **Body:**
+
 ```json
 {
   "nome": "string",
@@ -143,9 +143,7 @@ POST /enviar
 | `400` | Campos obrigatórios ausentes |
 | `500` | Erro interno ao enviar e-mail |
 
-
 ---
-
 
 ## 🎨 Design
 
@@ -155,9 +153,7 @@ Todo o trabalho foi pensado com muito cuidado, atenção aos detalhes e uma iden
 
 - Behance: [uxariane](https://www.behance.net/uxariane)
 
-
 ---
-
 
 ## 👨‍💻 Autor
 
