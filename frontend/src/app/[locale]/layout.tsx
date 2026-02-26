@@ -30,10 +30,10 @@ export async function generateMetadata({
     keywords: t('keywords').split(', '),
     authors: [{ name: 'Danilo Lopes' }],
     alternates: {
-      canonical: `https://localhost:3000/${locale}`,
+      canonical: `https://danilo1opes.vercel.app/${locale}`,
       languages: {
-        pt: 'https://localhost:3000/pt',
-        en: 'https://localhost:3000/en',
+        pt: 'https://danilo1opes.vercel.app/pt',
+        en: 'https://danilo1opes.vercel.app/en',
       },
     },
     openGraph: {
