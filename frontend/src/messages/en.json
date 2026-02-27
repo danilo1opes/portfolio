@@ -56,8 +56,8 @@
         "title": "CalisthenyX",
         "description": "Modern landing page for a calisthenics training platform, focused on performance and accessibility.",
         "tech": {
-          "one": "TypeScript",
-          "two": "JavaScript",
+          "one": "Next.js",
+          "two": "Typescript",
           "three": "Tailwind CSS"
         }
       },
@@ -67,9 +67,9 @@
         "title": "NyxLobby",
         "description": "Lobby and authentication interface.",
         "tech": {
-          "one": "TypeScript",
-          "two": "JavaScript",
-          "three": "Tailwind CSS"
+          "one": "Next.js",
+          "two": "Node.js",
+          "three": "MongoDB"
         }
       },
       {
@@ -78,9 +78,9 @@
         "title": "NyxTech",
         "description": "Institutional technology website.",
         "tech": {
-          "one": "TypeScript",
-          "two": "JavaScript",
-          "three": "Tailwind CSS"
+          "one": "React",
+          "two": "Typescript",
+          "three": "Recharts"
         }
       },
       {
@@ -89,7 +89,7 @@
         "title": "Boreal Forest",
         "description": "Nature-inspired landing page with immersive visual aesthetics.",
         "tech": {
-          "one": "TypeScript",
+          "one": "HTML5",
           "two": "JavaScript",
           "three": "Tailwind CSS"
         }
@@ -100,9 +100,9 @@
         "title": "TendShop",
         "description": "Landing page for an e-commerce platform.",
         "tech": {
-          "one": "TypeScript",
-          "two": "JavaScript",
-          "three": "Tailwind CSS"
+          "one": "React",
+          "two": "Next.js",
+          "three": "react-i18next"
         }
       },
       {
@@ -111,9 +111,9 @@
         "title": "Animais Fantásticos",
         "description": "Interactive website developed to practice JavaScript and DOM manipulation.",
         "tech": {
-          "one": "TypeScript",
-          "two": "JavaScript",
-          "three": "Tailwind CSS"
+          "one": "Figma",
+          "two": "React",
+          "three": "Vite"
         }
       },
       {
@@ -122,8 +122,8 @@
         "title": "Tavares & Saraiva Advogados",
         "description": "Legal institutional website focused on credibility, clarity, and strategic lead generation.",
         "tech": {
-          "one": "TypeScript",
-          "two": "JavaScript",
+          "one": "Next.js",
+          "two": "Typescript",
           "three": "Tailwind CSS"
         }
       },
@@ -134,7 +134,7 @@
         "description": "Landing page with a futuristic aesthetic focused on visual impact and usability.",
         "tech": {
           "one": "TypeScript",
-          "two": "JavaScript",
+          "two": "Motion",
           "three": "Tailwind CSS"
         }
       }
